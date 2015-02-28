@@ -16,9 +16,16 @@
 		<junit.version>4.11</junit.version>
 		<maven-compiler-plugin.version>3.0</maven-compiler-plugin.version>
 		<maven-dependency-plugin.version>2.5.1</maven-dependency-plugin.version>
+		<hsqldb.version>2.3.2</hsqldb.version>
 	</properties>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>org.hsqldb</groupId>
+			<artifactId>hsqldb</artifactId>
+			<version>${hsqldb.version}</version>
+		</dependency>
 
 		<!-- Logging -->
 		<dependency>
