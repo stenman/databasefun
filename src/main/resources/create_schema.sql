@@ -1,6 +1,8 @@
 DROP TABLE customer
 IF EXISTS CASCADE;
-DROP TABLE order
+DROP TABLE customerorder
+IF EXISTS CASCADE;
+DROP TABLE configuration
 IF EXISTS CASCADE;
 
 CREATE TABLE customer (
@@ -9,9 +11,9 @@ CREATE TABLE customer (
 	customer_lastname VARCHAR(100)
 );
  
-CREATE TABLE order (
+CREATE TABLE customerorder (
 	order_id BIGINT IDENTITY,
-	customer_id BIGINT,
+	customer_id BIGINT NOT NULL,
 	amount DOUBLE,
 	FOREIGN KEY (customer_id) REFERENCES customer(customer_id)
 );
