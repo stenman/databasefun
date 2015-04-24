@@ -19,6 +19,7 @@
 		<hsqldb.version>2.3.2</hsqldb.version>
 		<hibernate.version>4.3.8.Final</hibernate.version>
 		<hibernate-jpa.version>1.0.0.Final</hibernate-jpa.version>
+		<tomcat.version>8.0.21</tomcat.version>
 	</properties>
 
 	<dependencies>
@@ -73,6 +74,12 @@
 			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-catalina</artifactId>
+			<version>${tomcat.version}</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
